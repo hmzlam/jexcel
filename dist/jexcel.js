@@ -1466,7 +1466,7 @@ var jexcel = (function(el, options) {
                         value: obj.options.columns[x].multiple ? value.split(';') : value,
                         width:'100%',
                         height:editor.style.minHeight,
-                        position: (obj.options.tableOverflow == true || obj.options.fullscreen == true) ? true : false,
+                        position: (obj.options.tableOverflow == true) ? true : false,
                         onclose:function() {
                             obj.closeEditor(cell, true);
                         }
